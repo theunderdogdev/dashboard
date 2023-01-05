@@ -60,3 +60,6 @@ nav.active {
 	background-color: rgba(56, 139, 253, 0.15);
 	color: #58a6ff;
 }
+.dashboard {
+	grid-auto-rows: auto;
+}
