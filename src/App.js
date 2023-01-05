@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-
+import NavBar from "./components/NavBar";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<>
+			<NavBar />
+			<div className="w-full mt-[6.5rem] min-h-[calc(100vh-6.5rem)] relative px-4 py-3">
+				<div className="flex lg:flex-row gap-3 ">
+					<div className="lg:w-2/3 sm:h-96 bg-neutral-900 rounded-md"></div>
+					<div className="lg:w-1/3 sm:h-96 bg-neutral-900 rounded-md"></div>
+				</div>
+			</div>
+		</>
+	);
 }
 
 export default App;
